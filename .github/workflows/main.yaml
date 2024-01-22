@@ -19,7 +19,7 @@ jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
     steps:
-      - name: "$MESSAGE"
+      - name: ${{ inputs.message }}
         run: |
           echo "Log level: $LEVEL"
           echo "Message: $MESSAGE"
