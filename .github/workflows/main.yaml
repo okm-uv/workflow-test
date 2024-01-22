@@ -11,10 +11,9 @@ on:
         - info
         - warning
         - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
+      message:
+        description: 'Test message'
+        required: true
 
 jobs:
   log-the-inputs:
@@ -22,7 +21,9 @@ jobs:
     steps:
       - run: |
           echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
+          echo "Message: $MESSAGE"
+          echo "force error under"
+          cd unknown_directory
         env:
           LEVEL: ${{ inputs.logLevel }}
-          TAGS: ${{ inputs.tags }}
+          MESSAGE: ${{ inputs.message }}
