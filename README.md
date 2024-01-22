@@ -1,3 +1,3 @@
 # workflow-test
 
-repository_dispatch を使って curl をしてみる
+workflow_dispatch を使って curl をしてみる
