@@ -23,8 +23,6 @@ jobs:
         run: |
           echo "Log level: $LEVEL"
           echo "Message: $MESSAGE"
-          echo "force error under"
-          cd unknown_directory
         env:
           LEVEL: ${{ inputs.logLevel }}
           MESSAGE: ${{ inputs.message }}
