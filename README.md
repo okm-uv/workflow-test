@@ -3,7 +3,7 @@
 1. workflow_dispatch ができる workflow をつくる : [参照](./.github/workflows/main.yaml)
 2. workflow を実行する : [参照](run-workflow.sh)
 3. workflow の一覧から run-id を取得する : [参照](get-workflow.sh)
-4. job の一覧から job-id を取得する : [参照](get-job-list.sh)
+4. run-id を使って job の一覧を取得し、 job から job-id を取得する : [参照](get-job-list.sh)
 5. job-id から job の状態を取得する : [参照](get-job.sh)
 
 ## アクセストークンをつくる
@@ -29,11 +29,12 @@
 - `actions/runs`
 - ひとつひとつが大きいので、クエリパラメータを使って取得する期間をしぼる
 
-## job の一覧から job-id を取得する
+## run-id を使って job の一覧を取得し、 job から job-id を取得する
 
 - <https://docs.github.com/ja/rest/actions/workflow-jobs?apiVersion=2022-11-28#list-jobs-for-a-workflow-run>
 - [参照](get-job-list.sh)
 - `actions/runs/${RUN_ID}/jobs`
+- workflow 実行時に `step > name` を指定し、job 一覧からその名前を検索して job を特定する
 
 ## job-id から job の状態を取得する
 
