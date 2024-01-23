@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 
 get_workflow() {
-  # https://docs.github.com/ja/rest/actions/workflow-runs?apiVersion=2022-11-28
+  # https://docs.github.com/ja/rest/actions/workflow-runs?apiVersion=2022-11-28#list-workflow-runs-for-a-repository
   command=$(echo curl --silent \
     -H "Authorization: token ${GITHUB_TOKEN}" \
     -H 'Accept: application/vnd.github.everest-preview+json' \

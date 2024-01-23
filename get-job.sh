@@ -1,6 +1,7 @@
 #!/bin/sh -eu
 
 get_job() {
+  # https://docs.github.com/ja/rest/actions/workflow-jobs?apiVersion=2022-11-28#get-a-job-for-a-workflow-run
   job_info=$(curl --silent \
     -H "Authorization: token ${GITHUB_TOKEN}" \
     -H 'Accept: application/vnd.github.everest-preview+json' \
