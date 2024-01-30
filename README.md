@@ -8,7 +8,9 @@
 
 ## アクセストークンをつくる
 
-<https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
+- <https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
+- selected repositories
+- action: write の permission が必要
 
 ## workflow_dispatch ができる workflow をつくる
 
