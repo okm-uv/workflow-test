@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: ${{ inputs.message }}
         run: |
+          echo "this is develop"
           echo "Log level: $LEVEL"
           echo "Message: $MESSAGE"
         env:
