@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/sh -eu
 
 get_token() {
   jwt=$(python create_jwt.py)
