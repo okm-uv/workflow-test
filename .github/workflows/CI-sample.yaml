@@ -1,0 +1,20 @@
+name: Wait and Exit
+
+on:
+  push
+
+jobs:
+  wait-20-seconds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Do something first (optional)
+        run: echo "Starting the workflow..."
+
+      - name: Wait for 20 seconds
+        run: sleep 20
+
+      - name: Exit with success
+        run: echo "Workflow completed after 20 seconds wait"
