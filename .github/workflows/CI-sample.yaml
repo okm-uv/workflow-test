@@ -4,7 +4,7 @@ on:
   push
 
 jobs:
-  wait-and-exit:
+  CI-1:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
