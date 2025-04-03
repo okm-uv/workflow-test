@@ -44,5 +44,3 @@
 - [参照](get-job.sh)
 - `actions/jobs/${JOB_ID}`
 - `status` と `conclusion` をみて判定する
-
-CI test
