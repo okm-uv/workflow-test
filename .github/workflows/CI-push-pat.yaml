@@ -6,7 +6,7 @@ on:
       - pat/**
 
 jobs:
-  wait-and-exit:
+  wait-and-exit-pat:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
