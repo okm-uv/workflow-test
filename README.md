@@ -5,4 +5,4 @@
 - pat を使う場合： /pat
 - GitHubApp を使う場合： /github_app
 
-run CI
+run CI!
