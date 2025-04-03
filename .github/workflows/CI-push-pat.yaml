@@ -1,4 +1,4 @@
-name: Sleep and Exit Workflow
+name: push-pat
 
 on:
   push:
