@@ -1,10 +1,9 @@
 name: Wait and Exit
 
-on:
-  push
+on: push
 
 jobs:
-  wait-20-seconds:
+  wait-10-seconds:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -13,8 +12,8 @@ jobs:
       - name: Do something first (optional)
         run: echo "Starting the workflow..."
 
-      - name: Wait for 20 seconds
-        run: sleep 20
+      - name: Wait for 10 seconds
+        run: sleep 10
 
       - name: Exit with success
-        run: echo "Workflow completed after 20 seconds wait"
+        run: echo "Workflow completed after 10 seconds wait"
