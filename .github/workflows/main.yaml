@@ -2,15 +2,6 @@ name: Repository Dispatch Workflow
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: "Log level"
-        required: true
-        default: "warning"
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
       message:
         description: "Test message"
         required: true
@@ -22,8 +13,6 @@ jobs:
       - name: ${{ inputs.message }}
         run: |
           echo "this is develop"
-          echo "Log level: $LEVEL"
           echo "Message: $MESSAGE"
         env:
-          LEVEL: ${{ inputs.logLevel }}
           MESSAGE: ${{ inputs.message }}
